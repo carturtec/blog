@@ -5,6 +5,7 @@ import PostsList from '../PostsList';
 import Footer from '../Footer';
 
 export default function Layout({onToggleTheme, selectedTheme}) {
+  
   return (
     <>
       <Header 
@@ -18,6 +19,7 @@ export default function Layout({onToggleTheme, selectedTheme}) {
         onToggleTheme={onToggleTheme}
         selectedTheme={selectedTheme}
       />
+    
     </>
   );
 }
