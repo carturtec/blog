@@ -10,18 +10,18 @@ import themes from './styles/themes';
 
 class App extends React.Component {
   
-
-
   render(){
     return(
+      
       <ThemeProvider>
        <ThemeContext.Consumer>
-         {({theme, handleToggleTheme}) => (
+         {({theme}) => (
           <StyledThemeProvider theme={themes[theme] || themes.dark}>
            <GlobalStyle />
            <Layout />          
           </StyledThemeProvider>
          )}
+
        </ThemeContext.Consumer>       
       </ThemeProvider>
     );
