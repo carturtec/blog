@@ -1,17 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Link  } from "react-router-dom";
 
 import Header from '../Header';
-import PostsList from '../PostsList';
 import Footer from '../Footer';
+import Routes from '../../Routes';
 
-export default function Layout({onToggleTheme, selectedTheme}) {
+import { Nav } from './styles';
+
+export default function Layout() {
   
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <PostsList />      
-      <Footer />
-          
-    </>
+      <Nav>
+        <Link to="/" >Home</Link>
+        <Link to="/posts" >Posts</Link>
+      </Nav>
+      <Routes />      
+      <Footer />          
+    </BrowserRouter>
   );
 }

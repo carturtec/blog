@@ -6,7 +6,7 @@ import Post from './Post';
 import posts from './posts';
 
 //método com classe
-export default class PostsList extends React.Component {
+/*export default class Posts extends React.Component {
   render() {
     return (
       <Container>
@@ -20,10 +20,9 @@ export default class PostsList extends React.Component {
       </Container>
     );
   }
-}
+}*/
 
-
-/*export default function PostsList() {
+export default function Posts() {
   return (
     <Container>
       {posts.map((post) => (
@@ -35,4 +34,4 @@ export default class PostsList extends React.Component {
       ))}
     </Container>
   );
-}*/
+}
